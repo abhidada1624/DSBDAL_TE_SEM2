@@ -1,0 +1,8 @@
+start-dfs.sh
+start-yarn.sh
+jps 
+
+hadoop fs -mkdir /78
+hadoop fs -put input.txt /78
+hadoop jar abc.jar /78 /78/output
+hadoop dfs -cat /78/output/*
